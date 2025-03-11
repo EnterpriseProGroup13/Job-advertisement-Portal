@@ -30,10 +30,10 @@ const Navbar = () => {
 
     return (
         <div className="flex">
-            {/* Sidebar Menu - Always Visible */}
+            {/* Sidebar Menu */}
             {isMenuOpen && (
                 <div className="fixed top-0 left-0 w-64 h-full bg-[#003366] text-white shadow-lg z-50 p-5 flex flex-col">
-                    {/* Close Button (Blue Arrow) */}
+                    {/* Close Button */}
                     <button 
                         onClick={() => setIsMenuOpen(false)} 
                         className="mb-8 flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-100"
@@ -44,7 +44,7 @@ const Navbar = () => {
                     {/* Navigation Links */}
                     <ul className="flex flex-col gap-6 text-lg font-medium">
                         <li><Link to="/" className="hover:text-gray-600">Home</Link></li>
-                        <li><Link to="/jobs" className="hover:text-gray-600">Jobs</Link></li>
+                        <li><Link to="/jobs" className="hover:text-gray-600">Job Listing</Link></li>
                         <li><Link to="/browse" className="hover:text-gray-600">Browse</Link></li>
                         {/* Added Profile Link */}
                         {user && <li><Link to="/profile" className="hover:text-gray-600">Profile</Link></li>}
